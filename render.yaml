@@ -1,0 +1,10 @@
+services:
+  - type: static
+    name: kisan-mitra
+    env: static
+    buildCommand: npm install && npm run build
+    publishPath: dist-render
+    routes:
+      - type: rewrite
+        source: /*
+        destination: /index.html
