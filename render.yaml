@@ -3,7 +3,7 @@ services:
     name: kisan-mitra
     env: static
     buildCommand: npm install && npm run build
-    publishPath: dist-render
+    publishPath: dist
     routes:
       - type: rewrite
         source: /*
